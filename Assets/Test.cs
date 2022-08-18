@@ -31,7 +31,7 @@ public class Test : MonoBehaviour
     {
         rb.MovePosition(position);
         position.x += 0.1f;
-        //position.y += 0.1f;
+        //position.y += 0.5f*Mathf.Sin(2*Mathf.PI*position.x);
         if(position.x >= 5)
         {
             moveRight = false;
@@ -41,7 +41,7 @@ public class Test : MonoBehaviour
     {
         rb.MovePosition(position);
         position.x -= 0.1f;
-        //position.y -= 0.1f;
+        //position.y -= 0.5f*Mathf.Sin(2*Mathf.PI*position.x);
         if (position.x <= -5)
         {
             moveRight = true;
