@@ -30,7 +30,7 @@ public class Test : MonoBehaviour
     void MoveRight()
     {
         rb.MovePosition(position);
-        rb.MoveRotation(position.x*72);
+        rb.MoveRotation(position.x * 72);
         position.x += 0.1f;
         //position.y += 0.5f*Mathf.Sin(2*Mathf.PI*position.x);
         if(position.x >= 5)
@@ -41,7 +41,7 @@ public class Test : MonoBehaviour
     void MoveLeft()
     {
         rb.MovePosition(position);
-        rb.MoveRotation(position.x*72);
+        rb.MoveRotation(position.x * 72);
         position.x -= 0.1f;
         //position.y -= 0.5f*Mathf.Sin(2*Mathf.PI*position.x);
         if (position.x <= -5)
